@@ -24,6 +24,7 @@ class Allies:
             (ally_code, nick)
             VALUES({0}, '{1}');
             """.format(ally_code, nick)
+            self.connection.set_data(insert_query)
 
     def update_allies(self):
         self.get_allies()
